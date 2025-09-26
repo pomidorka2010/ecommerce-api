@@ -8,6 +8,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
+app.use(express.static('public')); // Serve static files from the 'public' directory
 
 // Routes
 app.use('/api/products', productRoutes);
